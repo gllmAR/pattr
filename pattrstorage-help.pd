@@ -1,0 +1,22 @@
+#N canvas 619 176 647 452 10;
+#X obj 9 29 gstorage pattrHelp;
+#X obj 245 17 gsfloat pattrHelp param1;
+#X text 9 8 Pattr/Storage;
+#X floatatom 285 228 5 0 0 0 - - -, f 5;
+#X floatatom 333 228 5 0 0 0 - - -, f 5;
+#X floatatom 425 60 5 0 0 0 - - -, f 5;
+#X obj 99 205 gsfloat pattrHelp param1;
+#X obj 426 17 gsfloat pattrHelp param2;
+#X obj 351 305 gsfloat pattrHelp param3;
+#X obj 249 62 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6400 1;
+#X obj 464 59 sfloat pattrHelp param2;
+#X obj 285 200 r pattrHelp/param2;
+#X obj 285 252 s pattrHelp/param2;
+#X connect 1 0 9 0;
+#X connect 4 0 12 0;
+#X connect 5 0 10 0;
+#X connect 9 0 1 0;
+#X connect 10 0 5 0;
+#X connect 11 0 3 0;
+#X coords 0 452 1 451 125 45 0;

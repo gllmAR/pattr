@@ -1,38 +1,50 @@
-#Pattr
+# Pattr
 
-####A State saving Preset manager for PD Vanilla (0.46)
-
-
-![https://dl.dropboxusercontent.com/u/15569938/quickshare/git/pattr_main.png](https://dl.dropboxusercontent.com/u/15569938/quickshare/git/pattr_main.png)
+#### A State saving Preset manager with interpolation for PD Vanilla (0.46)
 
 
-#####Inspired from  
+![https://dl.dropboxusercontent.com/u/15569938/git/web_assets/pattr/pattr_main.png](https://dl.dropboxusercontent.com/u/15569938/git/web_assets/pattr/pattr_main.png)
 
-[http://pattr.ru/puredata-preset-manager.html](http://pattr.ru/puredata-preset-manager.html)
+inspired by pattrstorage object in max msp
 
-
-
-####Installation :
-Git clone to your main patch directory (or download it and extract)
+#### Installation :
+CD in your patch directory and Git clone  (or download it and extract)
+```
+git clone https://github.com/gllmAR/pattr.git
+```
 
 
 
 
+#### Usage :
 
-####Usage :
-creating a storage abstraction
+Look at [pattrstorage-help.pd] for more info
 
+
+to create a storage abstraction
+
+(nogui)
 `[pattr/storage argument]`
+or
+`[pattr/gstorage argument]`
 
 in the [argument] put the name of the context that the storage refere to
-
-`[pattr/storage main]`
+`[pattr/storage pattrHelp]`
 
 
 Create some state saving object with a argument for the context
 
-`pattr/sfloat main`
-`pattr/slist main`
+`pattr/sfloat pattrHelp.txt`
+or with a gui
+`pattr/sfloat pattrHelp.txt`
 
 #### Features
-multi-context,  multi save,  save to textfiles  (txt)
+* multi-context,
+* support interpolation,  
+* one save file,  
+* save to textfiles  (txt)
+
+
+#### todo
+* save and recall symbols,  atoms,  list,  array.
+* Clean up in the txt file (arrange in order)
